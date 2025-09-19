@@ -32,10 +32,10 @@ npm run dev
 ```
 
 ### Build all apps concurrently:
+
 ```bash
 npm run build
 ```
-
 
 ## ShadCN UI Commands
 
@@ -47,7 +47,7 @@ npx shadcn-ui add <component-name>
 
 ## Useful Scripts
 
-- `npm run dev`	    Start all apps in development mode
-- `npm run build`	    Build all apps
-- `npm run lint`	    Lint all packages and apps
-- `npm run format`    Format all code with Prettier
+- `npm run dev` Start all apps in development mode
+- `npm run build` Build all apps
+- `npm run lint` Lint all packages and apps
+- `npm run format` Format all code with Prettier

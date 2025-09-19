@@ -13,7 +13,7 @@ pnpm add @repo/tailwindcss
 In the global.css file, import the globals.css file from this package:
 
 ```css
-@import "@repo/tailwindcss/globals.css";
+@import '@repo/tailwindcss/globals.css';
 ```
 
 And it's done you can use tailwindcss classes in your application.
