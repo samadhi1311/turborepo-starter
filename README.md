@@ -1,6 +1,6 @@
 # Turborepo Starter
 
-A monorepo setup with **Next.js** frontend, **NestJS** backend, and shared **ShadCN UI components**.
+A monorepo setup with **Next.js** frontend, **NestJS** backend, and shared **ShadCN UI** components and **Drizzle** ORM.
 
 ## Project Structure
 
