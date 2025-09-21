@@ -18,7 +18,7 @@ A monorepo setup with **Next.js** frontend, **NestJS** backend, and shared **Sha
 ### Install Dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Development
@@ -28,13 +28,13 @@ npm install
 **Note**: Frontend runs on port `1228` and backend runs on port `3000`.
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Build all apps concurrently:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## ShadCN UI Commands
@@ -42,7 +42,7 @@ npm run build
 ### Generate new ShadCN UI component
 
 ```bash
-npx shadcn-ui add <component-name>
+pnpm dlx shadcn@latest add <component-name>
 ```
 
 ## Useful Scripts
