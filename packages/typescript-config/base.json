@@ -4,16 +4,21 @@
         "declaration": true,
         "declarationMap": true,
         "esModuleInterop": true,
-        "incremental": false,
+        "incremental": true,
         "isolatedModules": true,
         "lib": ["es2022", "DOM", "DOM.Iterable"],
-        "module": "NodeNext",
+        "module": "nodenext",
         "moduleDetection": "force",
         "moduleResolution": "NodeNext",
         "noUncheckedIndexedAccess": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true,
-        "target": "ES2022"
+        "target": "esnext",
+        "verbatimModuleSyntax": true,
+        "useDefineForClassFields": true,
+        "noImplicitOverride": true,
+        "noUncheckedSideEffectImports": true,
+        "noEmit": true
     }
 }

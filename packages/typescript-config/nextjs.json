@@ -7,6 +7,22 @@
         "moduleResolution": "Bundler",
         "allowJs": true,
         "jsx": "preserve",
-        "noEmit": true
+        "noEmit": true,
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "incremental": false,
+        "isolatedModules": true,
+        "lib": ["es2022", "DOM", "DOM.Iterable"],
+        "moduleDetection": "force",
+        "noUncheckedIndexedAccess": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2022",
+        "verbatimModuleSyntax": null,
+        "useDefineForClassFields": null,
+        "noImplicitOverride": null,
+        "noUncheckedSideEffectImports": null,
     }
 }
