@@ -1,6 +1,6 @@
 # Turborepo Starter
 
-A monorepo setup with **Next.js** frontend, **NestJS** backend, and shared **ShadCN UI** components and **Drizzle** ORM.
+A monorepo setup with **Next.js** frontend, **NestJS** backend, and shared **ShadCN UI** components and **Drizzle** ORM. This project uses PostgresSQL database and Better Auth authentication.
 
 ## Project Structure
 
@@ -42,6 +42,7 @@ pnpm run build
 ### Generate new ShadCN UI component
 
 ```bash
+cd packages/ui
 pnpm dlx shadcn@latest add <component-name>
 ```
 

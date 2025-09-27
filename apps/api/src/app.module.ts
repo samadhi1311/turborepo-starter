@@ -1,13 +1,20 @@
 import { Module } from '@nestjs/common';
 import { AppController } from '@/app.controller';
-import { AppService } from '@/app.service';
-import { DrizzleModule } from '@/common/modules/drizzle/drizzle.module';
+import { DrizzleModule } from '@/common/drizzle/drizzle.module';
+import { AuthModule } from '@/common/auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
-import { UsersModule } from '@/modules/users/users.module';
+import { APP_GUARD } from '@nestjs/core';
+import { AuthGuard } from '@mguay/nestjs-better-auth';
+import { UsersModule } from './modules/users/users.module';
 
 @Module({
-    imports: [ConfigModule.forRoot({ isGlobal: true }), DrizzleModule, UsersModule],
-    controllers: [AppController],
-    providers: [AppService],
+	imports: [
+		UsersModule,
+		ConfigModule.forRoot({ isGlobal: true }),
+		DrizzleModule,
+		AuthModule,
+	],
+	controllers: [AppController],
+	providers: [{ provide: APP_GUARD, useClass: AuthGuard }],
 })
-export class AppModule { }
+export class AppModule {}
